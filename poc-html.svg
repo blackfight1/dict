@@ -3,5 +3,5 @@
   <text x="20" y="30" font-family="Arial" font-size="16" fill="white">Testing HTML Injection via image</text>
   
   <!-- 尝试加载外部HTML内容 -->
-  <image href="http://evil.com/poc.html" width="400" height="200" x="0" y="50"/>
+  <image href="https://sparkinnovationhub.comcast.com/workspace-library/workspaces/0/1_29/Private/workspace-logo-f8cee4.png" width="400" height="200" x="0" y="50"/>
 </svg>

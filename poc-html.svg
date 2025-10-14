@@ -1,20 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="350" height="250">
-  <rect width="100%" height="100%" fill="#667eea"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+  <rect width="100%" height="100%" fill="pink"/>
   
-  <text x="175" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">Login Form</text>
-  
-  <rect x="25" y="50" width="300" height="140" rx="8" fill="white"/>
-  
-  <text x="40" y="75" font-family="Arial" font-size="11" fill="#333">Username:</text>
-  <rect x="40" y="80" width="270" height="25" rx="3" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
-  <text x="45" y="97" font-family="Arial" font-size="10" fill="#888">username</text>
-  
-  <text x="40" y="120" font-family="Arial" font-size="11" fill="#333">Password:</text>
-  <rect x="40" y="125" width="270" height="25" rx="3" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
-  <text x="45" y="142" font-family="Arial" font-size="10" fill="#888">••••••••</text>
-  
-  <rect x="40" y="160" width="270" height="30" rx="4" fill="#4CAF50"/>
-  <text x="175" y="179" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">LOGIN</text>
-  
-  <text x="175" y="220" text-anchor="middle" font-family="Arial" font-size="9" fill="rgba(255,255,255,0.8)">SVG HTML Injection Proof</text>
+  <a xmlns="http://www.w3.org/2000/svg" href="https://evil.com" target="_blank">
+    <rect x="50" y="100" width="300" height="50" fill="#007cba"/>
+    <text x="200" y="130" text-anchor="middle" font-family="Arial" font-size="16" fill="white">
+      Click here to login
+    </text>
+  </a>
 </svg>

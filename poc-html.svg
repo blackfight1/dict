@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <a xlink:href="https://www.evil.com">
-    <text x="20" y="20">点击</text>
+  <a xlink:href="https://example.com/test-redirect">
+    <text x="20" y="20">测试链接</text>
   </a>
 </svg>

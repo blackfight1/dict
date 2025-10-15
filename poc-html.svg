@@ -1,12 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
-  <rect width="100%" height="100%" fill="blue"/>
-  
-  <foreignObject width="400" height="200" x="0" y="50">
-    <iframe xmlns="http://www.w3.org/1999/xhtml" 
-            src="http://your-vps.com/poc.html" 
-            width="100%" 
-            height="100%" 
-            style="border: none;">
-    </iframe>
-  </foreignObject>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxhIHhsaW5rOmhyZWY9Imh0dHBzOi8vZXhhbXBsZS5jb20iPjx0ZXh0IHg9IjIwIiB5PSIyMCI+Q2xpY2s8L3RleHQ+PC9hPjwvc3ZnPg=="/>
 </svg>

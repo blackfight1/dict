@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://example.com">
     <text x="20" y="20">测试链接</text>
+  <a xlink:href="https://example.com">
+    <text x="20" y="20">测试链接</text>
+  <a xlink:href="https://example.com">
+    <text x="20" y="20">测试链接</text>
   </a>
 </svg>

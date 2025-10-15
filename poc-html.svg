@@ -1,3 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxhIHhsaW5rOmhyZWY9Imh0dHBzOi8vZXhhbXBsZS5jb20iPjx0ZXh0IHg9IjIwIiB5PSIyMCI+Q2xpY2s8L3RleHQ+PC9hPjwvc3ZnPg=="/>
+  <a xlink:href="https://www.evil.com">
+    <text x="20" y="20">点击</text>
+  </a>
 </svg>

@@ -1,9 +1,142 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <a xlink:href="https://example.com">
-    <text x="20" y="20">测试链接</text>
-  <a xlink:href="https://example.com">
-    <text x="20" y="20">测试链接</text>
-  <a xlink:href="https://example.com">
-    <text x="20" y="20">测试链接</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+
+  <!-- 测试1: 基本链接 -->
+  <a xlink:href="https://example.com/test1">
+    <text x="20" y="30">测试链接1</text>
   </a>
+
+  <!-- 测试2: 隐藏链接 -->
+  <a xlink:href="https://example.com/test2">
+    <rect x="100" y="10" width="80" height="20" fill="transparent"/>
+  </a>
+
+  <!-- 测试3: foreignObject HTML嵌入 -->
+  <foreignObject x="20" y="50" width="150" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <a href="https://example.com/test3">HTML链接</a>
+    </div>
+  </foreignObject>
+
+  <!-- 测试4: 使用元素引用 -->
+  <a xlink:href="https://example.com/test4" id="hiddenLink">
+    <text x="20" y="120" visibility="hidden">隐藏文本</text>
+  </a>
+  <use xlink:href="#hiddenLink" x="0" y="0"/>
+
+  <!-- 测试5: 外部样式表 -->
+  <style type="text/css">
+    @import url("https://example.com/test.css");
+    .test { cursor: pointer; }
+  </style>
+
+  <!-- 测试6: 外部字体 -->
+  <defs>
+    <font-face font-family="TestFont">
+      <font-face-src>
+        <font-face-uri xlink:href="https://example.com/font.woff"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+
+  <!-- 测试7: 滤镜外部资源 -->
+  <defs>
+    <filter id="externalResource" x="0" y="0" width="100%" height="100%">
+      <feImage xlink:href="https://example.com/pixel.png" result="externalImg"/>
+      <feBlend in="SourceGraphic" in2="externalImg" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <!-- 测试8: 动画时间控制 -->
+  <rect x="200" y="150" width="50" height="50" fill="red">
+    <animate attributeName="x" from="200" to="250" begin="2s" dur="1s" 
+             fill="freeze" repeatCount="1"/>
+  </rect>
+
+  <!-- 测试9: 渐变动画 -->
+  <defs>
+    <linearGradient id="animatedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0000">
+        <animate attributeName="offset" from="0" to="1" begin="0s" dur="3s"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- 测试10: 脚本数据URI -->
+  <script type="text/ecmascript" xlink:href="data:application/javascript,console.log('test')"/>
+
+  <!-- 测试11: 元数据 -->
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about="https://example.com/metadata-test"/>
+    </rdf:RDF>
+  </metadata>
+
+  <!-- 测试12: 外部图像 -->
+  <image xlink:href="https://example.com/test-image.jpg" x="300" y="200" width="50" height="50"/>
+
+  <!-- 测试13: 嵌套SVG -->
+  <svg x="350" y="10" width="100" height="80">
+    <a xlink:href="https://example.com/nested">
+      <text x="10" y="20">嵌套链接</text>
+    </a>
+  </svg>
+
+  <!-- 测试14: 符号引用 -->
+  <symbol id="symbolLink" viewBox="0 0 100 30">
+    <a xlink:href="https://example.com/symbol-test">
+      <text x="10" y="15">符号链接</text>
+    </a>
+  </symbol>
+  <use xlink:href="#symbolLink" x="20" y="250"/>
+
+  <!-- 测试15: 标记元素 -->
+  <defs>
+    <marker id="markerTest" markerWidth="10" markerHeight="10" refX="5" refY="5">
+      <a xlink:href="https://example.com/marker-test">
+        <circle cx="5" cy="5" r="4" fill="blue"/>
+      </a>
+    </marker>
+  </defs>
+
+  <!-- 测试16: 模式填充 -->
+  <defs>
+    <pattern id="patternTest" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <a xlink:href="https://example.com/pattern-test">
+        <rect width="20" height="20" fill="green"/>
+      </a>
+    </pattern>
+  </defs>
+
+  <!-- 测试17: 剪辑路径 -->
+  <defs>
+    <clipPath id="clipTest">
+      <a xlink:href="https://example.com/clip-test">
+        <circle cx="25" cy="25" r="20"/>
+      </a>
+    </clipPath>
+  </defs>
+
+  <!-- 测试18: 遮罩 -->
+  <defs>
+    <mask id="maskTest">
+      <a xlink:href="https://example.com/mask-test">
+        <rect x="0" y="0" width="50" height="50" fill="white"/>
+      </a>
+    </mask>
+  </defs>
+
+  <!-- 应用测试元素 -->
+  <rect x="200" y="250" width="100" height="50" fill="url(#patternTest)" mask="url(#maskTest)"/>
+
+  <!-- 测试19: 光标样式 -->
+  <rect x="350" y="250" width="50" height="30" fill="orange" style="cursor: url('https://example.com/cursor.cur'), auto;"/>
+
+  <!-- 测试20: 变换矩阵 -->
+  <g transform="matrix(1,0,0,1,0,0)">
+    <a xlink:href="https://example.com/transform-test">
+      <text x="400" y="300">变换链接</text>
+    </a>
+  </g>
+
 </svg>
